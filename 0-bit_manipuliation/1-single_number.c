@@ -2,7 +2,10 @@
 
 int	sngl_nmbr(int	R[9])
 {
-	
+	int	res = 0;
+	for (int i = 0; i < 9; i++)
+		res ^= R[i];
+	return (res);
 }
 
 int	main()

@@ -12,10 +12,6 @@ int	main()
 {
 	int	R[9] = {1, 2, 3, 4, 1, 2, 3, 8, 4};
 	int	x = sngl_nmbr(R);
-	printf("%d\n", x);
-	int	res = 0;
-	for (int i = 0; i < 9; i++)
-		res ^= R[i];
-	return (res);
+	printf("%d                           \n", x);
 	return (0);
 }

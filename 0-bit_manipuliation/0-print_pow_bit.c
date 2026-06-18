@@ -11,6 +11,14 @@ void	print_pwr(int R[4])
 		}
 		printf("]");
 	}
+	for (int i = 0; i < total; i++) {
+		printf("[");
+		for (int j = 0; j < 4; j++) {
+			if (i & (1 << j))
+				printf("%d", R[j]);
+		}
+		printf("]");
+	}
 	printf("\n");
 	return;
 }
